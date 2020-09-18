@@ -11,8 +11,8 @@ function writePassword() {
 }
 
 function generatePassword(){
-  return "A string for the password";
-}
+  return "A string for the password"'
+};
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
