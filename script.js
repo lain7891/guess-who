@@ -11,7 +11,7 @@ function writePassword() {
 }
 
 function generatePassword(){
-  return "A string for the password.";
+  return "This will be replaced by me generated password.";
 }
 
 // Add event listener to generate button
