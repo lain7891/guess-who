@@ -44,25 +44,27 @@ var symbol = confirm ("Click OK if you want to use symbol characters?");
 //   }
 
 
-// Used ASCII Table to avoid writing all the letters
-
 function getRandomLower() {
-  return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
+  lower = 'abcdefghijklmnopqrstuvwxyz'
+  return lower[Math.floor(Math.random() * lower.length)];
+}
+for (var i = 0; i < lower.length; i++){
+  console.log(lower[i]);
 }
 
-if (getRandomLower)
-
 function getRandomUpper() {
-  return String.fromCharCode(Math.floor(Math.random() * 26) + 65);
+  upper = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+  return upper[Math.floor(Math.random() * upper.length)];
 }
 
 function getRandomNumber() {
-  return String.fromCharCode(Math.floor(Math.random() * 10) + 48);
+  number = "0123456789"
+  return number[Math.floor(Math.random() * number.length)];
 }
 
 function getRandomSymbol() {
-  symbols = '~`!@#$%^&*()_+-={}|:"<>?,./;'; 
-  return symbols[Math.floor(Math.random() * symbols.length)];
+  symbol = '~`!@#$%^&*()_+-={}|:"<>?,./;'; 
+  return symbol[Math.floor(Math.random() * symbol.length)];
 }
 
 console.log(getRandomLower());
