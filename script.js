@@ -66,9 +66,7 @@ var symbol = confirm ("Click OK if you want to use symbol characters?");
   console.log(userPassword);
   return userPassword; 
 }
-
-
-
+// generates the random characters 
 function getRandomLower() {
   lower = 'abcdefghijklmnopqrstuvwxyz'
   return lower[Math.floor(Math.random() * lower.length)];
