@@ -18,39 +18,62 @@ var passwordCharacter = {
 }
 
 function generatePassword(){
-  return "This will be replaced by me generated password.";
-}
-// This is where I asked user how many characters?
-var character = prompt("How many characters to generate your password?"); 
-
-
-if (character){
-  alert = prompt("Need a value");
-}
-  else if (enter < 8 || enter > 128) {
-  character = prompt("Choose between 8 to 128 characters");
-  }
-
+  // setting number they pick
+character = prompt("Choose between 8 to 128 characters");
+console.log(character)
+// convert number from string to an integer
+character = parseInt(character)
 var lower = confirm ("Click OK if you want to use lowercase characters?");
 var upper = confirm ("Click OK if you want to use uppercase characters?");
 var number = confirm ("Click OK if you want to use number characters?");
 var symbol = confirm ("Click OK if you want to use symbol characters?");
+  // Options are going to be stored
+  var characterOptions = ""
+  // This is my string that will hold the users new password
+  var userPassword = ""
+  // Checking the number of characters they want is between the numbers below
+  if (character >= 8 && character <= 128) {
+    // Random lowercase letters to choose from
+    if (lower === true) {
+      for (var i = 0; i < character; i++){
+        characterOptions = characterOptions + getRandomLower();
+      }
+    }
+    if (upper === true) {
+      for (var i = 0; i < character; i++){
+        characterOptions = characterOptions + getRandomUpper();
+      }
+    }
+    if (number === true) {
+      for (var i = 0; i < character; i++){
+        characterOptions = characterOptions + getRandomNumber();
+      }
+    }
+    if (symbol === true) {
+      for (var i = 0; i < character; i++){
+        characterOptions = characterOptions + getRandomSymbol();
+      }
+    }
+  }
+  else {
+    alert ("Sorry can't create");
+  }
+  for (var i = 0; i < character; i++){
+  userPassword = userPassword + characterOptions[Math.floor(Math.random() * characterOptions.length)];
+  }
+  // return characterOptions[Math.floor(Math.random() * characterOptions.length)];
+  console.log(characterOptions);
+  console.log(userPassword);
+  return userPassword; 
+}
 
-// if (character){
-//   alert = prompt("Need a value");
-// }
-//   else if (enter < 8 || enter > 128) {
-//   character = prompt("Choose between 8 to 128 characters");
-//   }
 
 
 function getRandomLower() {
   lower = 'abcdefghijklmnopqrstuvwxyz'
   return lower[Math.floor(Math.random() * lower.length)];
 }
-for (var i = 0; i < lower.length; i++){
-  console.log(lower[i]);
-}
+
 
 function getRandomUpper() {
   upper = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
