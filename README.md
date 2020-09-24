@@ -13,6 +13,8 @@ o	Conditionals (If/Else statements)
 o	Console logging
 o	Strings and alerts
 
+https://lain7891.github.io/guess-who/
+
 <img src="assets/images/genpasshome.png"> 
 <img src="assets/images/genpasschoose.png"> 
 <img src="assets/images/genpasslower.png"> 
