@@ -13,7 +13,13 @@ o	Conditionals (If/Else statements)
 o	Console logging
 o	Strings and alerts
 
+<img src="assets/images/genpasshome.png"> 
 <img src="assets/images/genpasschoose.png"> 
+<img src="assets/images/genpasslower.png"> 
+<img src="assets/images/genpassupper.png"> 
+<img src="assets/images/genpassnum.png"> 
+<img src="assets/images/genpasssymbol.png"> 
+<img src="assets/images/genpass.png"> 
 
 Creating a password generator is used every day with the many accounts that we need to create. This assignment was a challenge for me because of how complex JavaScript is for me. I struggled a lot on what would work best and what the next step needed to be. My tutor for the class helped me and explained in more detail why something worked or did not as well as my TA Melissa. Once I got an idea of how the concepts needed to be placed together then I was able to get through and complete the generator. 
 
